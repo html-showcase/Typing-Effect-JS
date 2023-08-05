@@ -1,0 +1,47 @@
+
+
+/* == [  ] == == == == == == == == == */
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background: #eee;
+   min-height: 100vh;
+   height: 100vh;
+   margin: 0;
+}
+
+main {
+   height: 100%;
+}
+
+article {
+   background: #f5f5f5;
+   display: grid;
+   place-items: center;
+   width: 90%;
+   height: 100%;
+   margin: auto;
+}
+
+label {
+   background: #fff;
+   display: grid;
+   place-items: center;
+   width: clamp( 100px, 90%, 950px );
+   height: 80%;
+   margin: auto;
+   padding: 5rem;
+   border-radius: 1.5rem;
+   box-shadow: #ddd 0 1.5rem 5px 5px;
+}
+
+p#messages {
+   outline: transparent;
+   border: transparent;
+   font-size: clamp( 20px, 5vw, 60px);
+   color: #a67ec7;
+}
+#messages::placeholder {
+}
